@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+        <title>SURVEY</title>
+        <meta name="description" content="A survey to provide better user experience">
+
+        <link rel="stylesheet" href="./CSS/style.css"> 
+    </head>
+    <body id="load">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="./ng-lasaco-logo.png" alt="Lasaco Assurance PLC" width="100%">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="loader-wrapper">
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+                <div class="loader">
+                    <img src="./ng-lasaco-logo.png" alt="Lasaco Assurance PLC" width="100%">
+                </div>
+            </div>
+            <div class="content">
+                <div class="survey-container" id="begin">
+                    <div class="survey-director">
+                        <h2>Customer Service Survey</h2>
+                        <button class="btn" onclick="start()">Start a survey &RightArrow; </button>
+                    </div>
+
+                    <div class="survey">
+                        <h2>Answer all questions to complete the survey</h2>
+                        <form id="form">
+                            <ol>
+                                <li class="username">
+                                    <label for="name">What is your Name</label>
+                                    <div>
+                                        <input id="name" type="text" placeholder=""  class="wide" required>
+                                    </div>
+                                </li>
+                                <li class="email">
+                                    <label>Do you have a Email Address </label>
+                                    <div>
+                                        <input type="checkbox" id="yes"> <label for="yes">YES</label>
+                                        <input type="checkbox" id="no"> <label for="no">NO</label>
+                                    </div>
+                                    <li>
+                                        <label for="">Enter your Email Address</label>
+                                        <div>
+                                            <input id="email" type="email" placeholder="" class="wide" required>
+                                        </div>
+                                    </li>
+                                </li>
+                                <li>
+                                    <label for="q-1">Are your properties insured</label>
+                                    <div>
+                                        <input type="checkbox" id="yes-1"> <label for="yes-1">YES</label>
+                                        <input type="checkbox" id="no-1"> <label for="no-1">NO</label>
+                                    </div>
+                                </li>
+                            </ol>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="./JS/script.js"></script>
+</html>
